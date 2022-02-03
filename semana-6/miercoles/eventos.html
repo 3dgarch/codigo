@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        window.onresize = function() {
+            console.log("ancho", this.innerWidth);
+            console.log("alto", this.innerHeight);
+        }
+
+        window.onscroll = function() {
+            console.log('distancia', this.scrollv)
+        }
+
+        document.querySelector('body').onmousemove = function (event) {
+            console.log("eventx", event.clientX);
+        }
+
+
+    </script>
+</body>
+</html>

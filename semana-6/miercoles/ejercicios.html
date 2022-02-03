@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS</title>
+</head>
+<body>
+    <!-- EJERCICIO UNO -->
+    <BUtton CLASS="JS_button_1" data-color="red" data-color-bg="orange" data-text="boton uno modificado">
+        BOTON UNO
+    </BUtton>
+    <BUtton CLASS="JS_button_2" data-color="red" data-color-bg="orange" data-text="boton uno modificado">
+        BOTON UNO
+    </BUtton>
+    <BUtton CLASS="JS_button_3" data-color="red" data-color-bg="orange" data-text="boton uno modificado">
+        BOTON UNO
+    </BUtton>
+    <BUtton CLASS="JS_button_4" data-color="red" data-color-bg="orange" data-text="boton uno modificado">
+        BOTON UNO
+    </BUtton>
+    
+    <SCript>
+        //EJERCICIO uno
+        function changeAtter() {
+            this.style.color = this.dataset.color
+            this.style.backgroundColor = this.dataset.colorBg
+            this.textContent = this.dataset.text
+        }
+        
+        const botones = document.querySelectorAll('button')
+
+            botones.forEach((boton) =>{
+                console.log("boton", boton)
+                boton.onclick = changeAtter
+            })
+
+    </SCript>
+
+    
+</body>
+</html>

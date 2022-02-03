@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+
+    <style>
+        .dropdown {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: green;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .dropdown .menu {
+            position: absolute;
+            left: 0;
+            padding: 0;
+            list-style: none;
+            background: red;
+            min-width: 200px;
+            top: 100%;
+            margin: 0;
+            display: none;
+        }
+        .dropdown .menu a {
+            display: block;
+            padding:10px;
+            text-align: left;
+            text-decoration: none;
+            border-bottom: 1px solid blue;
+            color: #fff;
+        }
+        .dropdown .menu a:hover {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <BUtton class="js_button dropdown">
+        BOTON
+
+        <ul class="menu">
+            <li>
+                <a href="">link 1</a>
+
+            </li>
+            <li>
+                <a href="">link 2</a>
+
+            </li>
+            <li>
+                <a href="">link 3</a>
+
+            </li>
+        </ul>
+    </BUtton>
+
+    <button class="js_button_3">
+        BOTON3
+
+    </button>
+
+    <script src="./scripts/main.js">
+
+    </script>
+    
+</body>
+</html>
